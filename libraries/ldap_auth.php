@@ -10,9 +10,9 @@
 |       $this->ldap_auth->auth($user, $pass);
 */
 class LDAP_auth{
-            //takes username and password, returns:
-            //true if user could bind to ldap server
-            //false if not.
+            //takes username and password,server, returns:
+            //true = user could bind to ldap server
+            //false = user could't bind to ldap server
 	   public function auth($username, $password)
            {
                 $server = 'ldap.forumsys.com'; //using domain, If the DC is down DNS will route to another DC.
